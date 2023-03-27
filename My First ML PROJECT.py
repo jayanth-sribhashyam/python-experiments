@@ -16,18 +16,20 @@ print("Decision Tree Algorithm")
 dstreeclassifier = tree.DecisionTreeClassifier()
 dstreeclassifier.fit(x_train, y_train)
 dstreepredictions = dstreeclassifier.predict(x_test)
-print("Accuracy Score =", accuracy_score(y_test, dstreepredictions)*100)
+a=accuracy_score(y_test, dstreepredictions)*100
+print("Accuracy Score =", a)
 #knn algorithm
 print("K Neighbours Algorithm")
 knclassifier = neighbors.KNeighborsClassifier()
 knclassifier.fit(x_train, y_train)
 knprediction = knclassifier.predict(x_test)
-print("Accuracy score =", accuracy_score(y_test, knprediction)*100)
+b=accuracy_score(y_test, knprediction)*100
+print("Accuracy score =", b)
 #comparison graph
 fig = plt.figure()
 fig.suptitle("Algorithm Comparison")
 names = ['KNN', 'Decision Tree']
-result = [96.66, 93.33]
+result = [b, a]
 plt.bar(names, result)
 plt.xlabel("Algorithm")
 plt.ylabel("Accuracy")
