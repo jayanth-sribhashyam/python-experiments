@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 plt.style.use('dark_background')
 x=np.arange(0,2*np.pi, 0.1)
 y=np.tan(x)
