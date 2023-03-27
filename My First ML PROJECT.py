@@ -31,6 +31,6 @@ result = [96.66, 93.33]
 plt.bar(names, result)
 plt.xlabel("Algorithm")
 plt.ylabel("Accuracy")
-
+plt.show()
 
 
