@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 plt.style.use('dark_background')
 xsin=np.arange(0,2*np.pi, 0.1)
 ysin=np.sin(xsin)
